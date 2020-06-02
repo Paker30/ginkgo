@@ -1,9 +1,15 @@
 import { pogo } from './dependencies.ts';
 import version  from './api/version.ts';
+import files  from './api/files.ts';
+import environment  from './config/env.ts';
 
-const server = pogo.server({ port: 3000 });
+const { port } = environment;
+
+const server = pogo.server({ port });
 server.route([
-    version
+    version,
+    files
 ]);
 
 server.start();
+console.log(`Server listening on port ${port}`);
