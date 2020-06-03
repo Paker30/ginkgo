@@ -1,6 +1,6 @@
 const { version: projectVersion } = JSON.parse(Deno.readTextFileSync('./project.json'));
-import { path } from '../dependencies.ts';
-import environment from '../config/env.ts';
+import { path } from '../../dependencies.ts';
+import environment from '../../config/env.ts';
 
 const { filmLocation } = environment;
 

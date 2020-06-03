@@ -1,7 +1,7 @@
-import { pogo } from './dependencies.ts';
+import { pogo } from '../dependencies.ts';
 import version  from './api/version.ts';
 import files  from './api/files.ts';
-import environment  from './config/env.ts';
+import environment  from '../config/env.ts';
 
 const { port } = environment;
 
